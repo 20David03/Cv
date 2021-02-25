@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;600;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(13, 12, 37);
+}
+
+body{
+    background-color: rgb(221, 248, 245);
+}
+
+
+.myname h1{
+    font-size:50px;
+    font-weight: 800;
+    color: rgb(68, 66, 180);
+}
+
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+ul{
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+ul li{
+    display: flex;
+    list-style-type: none;
+}
+
+ul li p{
+    margin-left: 12px;
+    font-weight: 400;
+}
+ul li a{
+    color: rgb(255, 0, 0);
+    margin-left: 12px;
+}
+
+.aboutme{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+.a>h1{
+    color: rgb(68, 66, 180);
+    font-size: 25px;
+    font-weight: 800;
+    padding-bottom: 10px;
+    background: -webkit-linear-gradient(rgb(58, 79, 173), rgb(42, 44, 146));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.a>p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.a + .a{
+    border-left: 2px solid rgb(68, 66, 180);
+    padding-left: 10px;
+}
+.motivation{
+    margin-top: 80px;
+
+}
+
+.motivation >h1{
+    color: rgb(68, 66, 180);
+    font-size: 50px;
+    text-align: center;
+    margin:20px 0;
+    font-weight: 800;
+
+}
+
+.motivation>p{
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(183, 187, 241);
+    border-radius: 10px;
+    padding: 15px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.motivation>h4{
+    margin-top: 20px;
+}
+
+
+@media (max-width:1030px){
+    .container{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media(max-width:566px){
+    .aboutme{
+        grid-template-columns: 1fr;
+    }
+    .a + .a{
+        border: none;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+}
